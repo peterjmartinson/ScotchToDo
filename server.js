@@ -77,6 +77,14 @@ var Todo = mongoose.model('Todo', { text : String } );
     });
 
   });
+
+// application ======================
+// The following is the front end:
+app.get('*', function(req, res) {
+  res.sendfile('./public/index.html');
+});
+
+
 // listen ===========================
 var port = process.env.PORT; 
 app.listen( app.get('port'), function() {
