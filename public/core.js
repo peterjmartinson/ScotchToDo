@@ -15,7 +15,7 @@ function mainController($scope, $http) {
 
   // when subitting the add form, send the text to the node API
   $scope.createTodo = function() {
-    $http.post('api/todos', $scope.formData)
+    $http.post('/api/todos', $scope.formData)
       .success(function(data) {
         $scope.formData = {};
         $scope.todos = data;
