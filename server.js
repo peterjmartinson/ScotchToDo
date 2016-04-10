@@ -3,11 +3,11 @@
 */
 
 // set up ============================
-var express = reqire('express');
-var app     = express();
-var mongoose = require('mongoose');
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
+var express        = reqire('express');
+var app            = express();
+var mongoose       = require('mongoose');
+var morgan         = require('morgan');
+var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 
 // configuration ====================
@@ -26,7 +26,7 @@ var Todo = mongoose.model('Todo', { text : String } );
 
 // routes ===========================
   // api ----------------------------
-  app.get('/api/todos', functin(req, res) {
+  app.get('/api/todos', function(req, res) {
     
     // use mongoose to get all records in the database
     Todo.find(function(err, todos) {
