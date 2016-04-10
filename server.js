@@ -81,7 +81,7 @@ var Todo = mongoose.model('Todo', { text : String } );
 // application ======================
 // The following is the front end:
 app.get('*', function(req, res) {
-  res.sendfile('./public/index.html');
+  res.sendfile(__dirname + '/public/index.html');
 });
 
 
