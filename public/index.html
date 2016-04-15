@@ -34,6 +34,7 @@
       <h1>Get Squared Away <span class="label label-info">
         {{ todos.length }}
       </span></h1>
+    </div> <!-- ends div at 33 -->
 
     <!-- TODO LIST -->
     <div id="todo-list" class="row">
@@ -45,10 +46,10 @@
             <input type="checkbox" ng-click="deleteTodo(todo._id)">
               {{ todo.text }}
           </label>
-        </div>
+        </div> <!-- ends div at 43 -->
 
-      </div>
-    </div>
+      </div> <!-- ends div at 40 -->
+    </div> <!-- ends div at 39 -->
 
     <!-- FORM TO CREATE TODOS -->
     <div id="todo-form" class="row">
@@ -63,8 +64,8 @@
           <!-- createToDo() WILL CREATE NEW TODOS -->
           <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
         </form>
-      </div>
-    </div>
-  </div>
+      </div> <!-- ends div at 55 -->
+    </div> <!-- ends div at 54 -->
+  </div> <!-- should end the div at 30, class="container" -->
 </body>
 </html>
