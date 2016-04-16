@@ -41,3 +41,5 @@ function ($scope, $http) {
   });
 
 }
+
+scotchTodo.controller('mainController', mainController);
