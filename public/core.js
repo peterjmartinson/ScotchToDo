@@ -1,8 +1,8 @@
 var scotchTodo = angular.module('scotchTodo', []);
 
-scotchTodo.controller('mainController', ['$scope', '$http',
-function ($scope, $http) {
-//function mainController($scope, $http) {
+//scotchTodo.controller('mainController', ['$scope', '$http',
+//function ($scope, $http) {
+function mainController($scope, $http) {
   $scope.formData = {};
 
   // when landing on a page, get all todos and show them
