@@ -43,6 +43,6 @@ scotchTodo.controller('mainController', ['$scope', '$http',
         });
     };
 
-});
+}]);
 
 scotchTodo.controller('mainController', mainController);
